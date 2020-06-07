@@ -1,5 +1,28 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Redux vs Context
+Redux:
+- distributes data to various components
+- Centralizes data in a store
+- Provides mechanism for changing data in the store
+
+Context:
+- Distributes data to various components
+
+### If we want to use Context in place of Redux
+- We need to be able to get data to any component in our hierarchy
+- we need to be able to separate our view logic from business logic
+- we need to be able to split up business logic (not have a single file with 10000 lines of code)
+
+### Analysis Result
+- Redux has Excellent documentation, well known design patterns, tremendous amount of open source libs
+- Context has no need for an extra lib, hard to build a 'store' component with cross cutting concerns.
+
+
+## Branches
+master branch - context to mimic redux ways using context
+
+
 ## Available Scripts
 
 In the project directory, you can run:
